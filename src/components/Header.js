@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  AppBar,
-  Box,
-  Button,
-  CssBaseline,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import App from "../App";
+import { Link } from "react-router-dom";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 
 function Header() {
   return (
@@ -18,12 +11,10 @@ function Header() {
             <Typography variant="h5" sx={{ flexGrow: 1 }}>
               CONSTRUCTOR
             </Typography>
-            <Button
-              variant="contained"
-              style={{ backgroundColor: "#00b3b3" }}
-              onClick={() => {}}
-            >
+
+            <Button variant="contained" style={{ backgroundColor: "#00b3b3" }}>
               Login
+              {/* <Link to={"/login"}>Login</Link> */}
             </Button>
           </Toolbar>
         </AppBar>

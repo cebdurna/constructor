@@ -6,21 +6,9 @@ import {
   Link,
 } from "react-router-dom";
 import Header from "./components/Header";
+import routes from "./config/routes";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Main Page</div>,
-  },
-  {
-    path: "/*",
-    element: <div>Not Main Page</div>,
-  },
-  {
-    path: "/about",
-    element: <div>AboutPage</div>,
-  },
-]);
+const router = createBrowserRouter(routes);
 
 function App() {
   return (
